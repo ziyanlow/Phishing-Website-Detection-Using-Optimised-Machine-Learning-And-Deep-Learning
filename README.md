@@ -1,0 +1,2 @@
+# Phishing-Website-Detection-Using-Optimised-Machine-Learning-And-Deep-Learning
+This project develops an enhanced phishing detection framework using a novel hybrid CNN + XGBoost architecture. It employs a Hybrid Ensemble Feature Selection (HEFS) methodology and compares tuned models such as Random Forest, XGBoost, CNN, and TCN via meta-learning layers to provide a robust solution for identifying malicious URLs.
