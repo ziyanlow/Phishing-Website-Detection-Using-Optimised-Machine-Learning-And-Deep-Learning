@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.check-btn {
+  background: #0066ff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s ease;
+}
+
+.check-btn:hover {
+  background: #004bcc;
+}
+
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  animation: fadeIn 0.25s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.safe {
+  background: #d4ffd4;
+  border: 2px solid #00aa00;
+  color: #006600;
+}
+
+.phishing {
+  background: #ffe5e5;
+  border: 2px solid #cc0000;
+  color: #990000;
+}
+
+#statusText {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#result {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
