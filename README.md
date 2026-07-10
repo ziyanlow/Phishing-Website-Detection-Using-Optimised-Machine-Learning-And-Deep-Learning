@@ -66,8 +66,8 @@ The selected features are simultaneously fed into two learning branches: a **Con
 
 1. **Data Preprocessing:** Handled missing/duplicate values, dropped single-valued/defective binary columns, applied Isolation Forest for outlier detection, and removed highly correlated features.
 2. **HEFS Pipeline:** Extracted the top-tier features based on a weighted rank aggregation of MI, RF Importance, and Permutation Importance.
-3. **Multi-Seed Benchmarking:** Benchmarked 6 ML models (RF, XGBoost, LR, Linear SVC, k-NN, LightGBM) and 4 DL models (FNN, CNN, TCN, LSTM). Every model was tested across 30 random seeds using 10-fold stratified CV to guarantee statistical reliability.
-4. **Hybridization:** Passed the HEFS-optimized features through a CNN and XGBoost independently. The probability outputs from both models were combined into a meta-feature space and fed into two residual Meta-MLP models to generate the final prediction.
+3. **Multi-Seed Benchmarking:** Benchmarked **6 ML models (RF, XGBoost, LR, Linear SVC, k-NN, LightGBM)** and **4 DL models (FNN, CNN, TCN, LSTM)**. Every model was tested across **30 random seeds** using **10-fold stratified CV** to guarantee statistical reliability.
+4. **Hybridization:** Passed the HEFS-optimized features through a CNN and XGBoost independently. The probability outputs from both models were combined into a meta-feature space and fed into **two residual Meta-MLP models** to generate the final prediction.
 
 ---
 
@@ -85,9 +85,9 @@ The project relies on benchmark datasets from the **Mendeley Data repository**:
 
 The proposed **CNN + XGBoost Hybrid Model** consistently outperformed all standalone base models and published benchmark architectures across all 300 evaluation runs.
 
-- 🎯 **High Accuracy & F1-Score:** Achieved state-of-the-art accuracy (96.31%) on the benchmark datasets.
-- 🛡️ **Low FPR:** Effectively minimized the false positive rate (3.59%), making it a viable solution for real-world browser extensions or traffic filters.
-- 🌍 **Generalizability:** Demonstrated excellent transferability (AUC-ROC > 0.99) when trained on one dataset and tested entirely on an external dataset.
+- 🎯 **High Accuracy & F1-Score:** Achieved state-of-the-art accuracy **(96.31%)** on the benchmark datasets.
+- 🛡️ **Low FPR:** Effectively minimized the false positive rate **(3.59%)**, making it a viable solution for real-world browser extensions or traffic filters.
+- 🌍 **Generalizability:** Demonstrated excellent transferability **(AUC-ROC > 0.99)** when trained on one dataset and tested entirely on an external dataset.
 
 ### 🖼️ Visual Performance
 
