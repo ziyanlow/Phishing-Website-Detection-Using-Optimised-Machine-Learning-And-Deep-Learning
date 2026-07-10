@@ -65,7 +65,7 @@ The selected features are simultaneously fed into two learning branches: a **Con
 ## 🧠 Methodology
 
 1. **Data Preprocessing:** Handled missing/duplicate values, dropped single-valued/defective binary columns, applied Isolation Forest for outlier detection, and removed highly correlated features.
-2. **HEFS Pipeline:** Extracted the top-tier features based on a weighted rank aggregation of MI, RF Importance, and Permutation Importance.
+2. **HEFS Pipeline:** Extracted the top-tier features based on a weighted rank aggregation of **MI, RF Importance, and Permutation Importance**.
 3. **Multi-Seed Benchmarking:** Benchmarked **6 ML models (RF, XGBoost, LR, Linear SVC, k-NN, LightGBM)** and **4 DL models (FNN, CNN, TCN, LSTM)**. Every model was tested across **30 random seeds** using **10-fold stratified CV** to guarantee statistical reliability.
 4. **Hybridization:** Passed the HEFS-optimized features through a CNN and XGBoost independently. The probability outputs from both models were combined into a meta-feature space and fed into **two residual Meta-MLP models** to generate the final prediction.
 
