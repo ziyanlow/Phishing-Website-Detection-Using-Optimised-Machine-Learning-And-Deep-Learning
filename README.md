@@ -21,6 +21,7 @@
 - [Methodology](#-methodology)
 - [Dataset](#-dataset)
 - [Results & Visualizations](#-results)
+- [Browser Extension](#-browser-extension)
 - [Environment & Libraries](#️-environment--libraries)
 - [References](#-references)
 
@@ -183,6 +184,25 @@ The proposed **CNN + XGBoost Hybrid Model** consistently outperformed all standa
 </p>
 
 </details>
+
+---
+
+## 🧩 Browser Extension
+
+To demonstrate the real-world applicability of the proposed Hybrid CNN + XGBoost framework, a lightweight Google Chrome browser extension named **PhishGuard** was developed. Moving beyond a standalone offline model, this deployment packages the detection system into a complete, usable end-user application built on Chrome’s modern Manifest V3 architecture. 
+
+*   **Real-Time Background Protection:** Utilizing Chrome's service workers, PhishGuard transparently monitors browsing activity. When a user navigates to a webpage, the extension captures the URL at page load, extracts structural characteristics, and passes them to the trained model. If the predicted probability exceeds the safety threshold, it instantly intercepts the page and displays a clear visual warning alongside the model's confidence score (e.g., 71.50% risk), preventing interaction with potentially harmful sites.
+*   **On-Demand Manual Verification:** Features an intuitive, user-initiated interface. By clicking the "Check Current Page" button, users can actively verify the safety of any active tab. The system returns a prominent warning panel utilizing visual cues (like red borders and alert icons) and exact numerical risk scores, providing transparent insights into the model's decision-making.
+
+<p align="center">
+  <img src="browser_extension_real_time.png" width="50%" alt="PhishGuard - Real-Time Detection"><br>
+  <em>Figure 15. Real-time background detection intercepting a page with a 71.50% phishing probability.</em>
+</p>
+
+<p align="center">
+  <img src="browser_extension_manual_check.png" width="50%" alt="PhishGuard - Manual Check"><br>
+  <em>Figure 16. The PhishGuard extension interface performing an on-demand manual URL safety check.</em>
+</p>
 
 ---
 
